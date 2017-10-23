@@ -40,6 +40,12 @@ function StartGame() {
   document.getElementById('StartGameButton').disabled = true;
 
   setTimeout(() => {
+    if ($(window).width() < 480) {
+      document.getElementsByTagName('html')[0].style.height = '100%';
+      document.getElementsByTagName('body')[0].style.height = '100%';
+      document.getElementById('game').style.height = 'calc(100% - 90px)';
+    };
+
     var $game = $('#game');
     var values = MatchGame.generateCardValues();
     MatchGame.renderCards(values, $game);
