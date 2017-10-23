@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105433370-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-105433370-2');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Meta tags -->
+  <!-- COMMON TAGS -->
+  <title>Match Game</title>
+  <meta name="author" content="Rodolfo Andr&eacute;s Rivas Matta">
+
+  <!-- Search Engine -->
+  <meta name="description" content="Card match game, easy to play, addictive and fast, unique and fun. Latest codecademy project of Rodolfo Andr&eacute; Rivas Matta.">
+
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Match Game">
+  <meta itemprop="description" content="Card match game, easy to play, addictive and fast, unique and fun. Latest codecademy project of Rodolfo Andr&eacute; Rivas Matta.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Match Game">
+  <meta name="twitter:description" content="Card match game, easy to play, addictive and fast, unique and fun. Latest codecademy project of Rodolfo Andr&eacute; Rivas Matta.">
+  <meta name="twitter:site" content="@RodolfoAndrRiMa">
+
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="Match Game">
+  <meta name="og:description" content="Card match game, easy to play, addictive and fast, unique and fun. Latest codecademy project of Rodolfo Andr&eacute; Rivas Matta.">
+  <meta name="og:url" content="https://rarm.github.io/match-game-project">
+  <meta name="og:site_name" content="Match Game">
+  <meta name="fb:admins" content="https://www.facebook.com/RodolfoAndresRivasMatta.RARM">
+  <meta name="og:type" content="website">
+
+</head>
+<body>
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="ad-container col-12">
+        <p>Here goes an ad.</p>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container" style="margin-top: 5rem;">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <p style="margin: 0;padding: 0;border: 0;font-size: 0.7rem;">Game by <a href="https://rarm.github.io/" target="_blank">Rodolfo</a></p>
+        <h1>Match Game</h1>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdY6aist9P8cRQQCamuFCR64nVWSsVmrrOkDYPYvj0IAwsrlA/viewform?usp=sf_link" target="_blank">Report a problem!</a>
+        <h2>Rules</h2>
+        <p>Click on a card to reveal the number on the other side. Click on a second card to try and find a match to the first. If you succeed, the pair will be removed from play. If not, try again!<br />You only have <b>one minute!</b></p>
+        <p>This game may use sounds, but you can disable them by clicking on the volume icon, just here:<br /><i id="volume-button" class="material-icons" onclick="volume()">volume_up</i></p>
+        <h2>How To Win</h2>
+        <p>You win when all pairs have been found.</p>
+        <div id="">
+          <audio id="start-audio" preload="auto">
+            <source src="resources/audio/starting-audio.mp3" type="audio/mpeg">
+            Your browser does not support the <code>audio</code> element.
+          </audio>
+          <p>Counter:<br />Computer <b id=computer-counter></b> vs. User <b id="user-counter"></b></p>
+          <p>Timer: <strong id="timer">60</strong> seconds.</p>
+          <button type="button" id="StartGameButton" value="Start" onclick="StartGame();">Start</button>
+        </div>
+      </div>
+      <div id="game" class="col-12 col-lg-9">
+        <!-- <div class="row"> -->
+          <!-- First row -->
+          <!--
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div>  -->
+          <!-- Second row -->
+          <!--
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div> -->
+          <!-- Third row -->
+          <!--
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div> -->
+          <!-- Fourth row -->
+          <!--
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div>
+          <div class="col-3 card"><p class="number"></p></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./resources/js/match-game.js"></script>
+  <script type="text/javascript" src="./resources/js/tests.js"></script>
+</body>
+</html>
