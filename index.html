@@ -62,6 +62,12 @@
             <source src="resources/audio/starting-audio.mp3" type="audio/mpeg">
             Your browser does not support the <code>audio</code> element.
           </audio>
+          <audio id="you-have-won" preload="auto">
+            <source src="resources/audio/you-have-won.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="you-have-lost" preload="auto">
+            <source src="resources/audio/you-have-lost.mp3" type="audio/mpeg">
+          </audio>
           <p>Counter:<br />Computer <b id=computer-counter></b> vs. User <b id="user-counter"></b></p>
           <p>Timer: <strong id="timer">60</strong> seconds.</p>
           <button type="button" id="StartGameButton" value="Start" onclick="StartGame();">Start</button>

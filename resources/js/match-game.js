@@ -81,12 +81,16 @@ function StartGame() {
 
           document.getElementById('game').innerHTML = '<div class="col-12 alert-container"><p>The game has finished!<br>You have lost :(</p></div>';
 
+          document.getElementById('you-have-lost').play();
+
         } else {
           userCounter += 1;
           sessionStorage.userCounter = userCounter;
           document.getElementById('user-counter').innerHTML = userCounter;
 
           document.getElementById('game').innerHTML = '<div class="col-12 alert-container"><p>The game has finished!<br>You have won!</p></div>';
+
+          document.getElementById('you-have-won').play();
 
         };
       };
@@ -104,6 +108,8 @@ function StartGame() {
         cardsFlipped = [];
 
         document.getElementById('game').innerHTML = '<div class="col-12 alert-container"><p>YOU HAVE WON!</p></div>';
+
+        document.getElementById('you-have-won').play();
 
       };
     }, 10);
