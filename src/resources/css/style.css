@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700,900');
+
+/*
+TABLE OF CONTENT
+1. Global
+  1.1. Text
+2. Mobile First
+  1.1. Instructions
+  1.2. Game
+3. Tablet
+  3.1. Game
+*/
+
+/* 1. GLOBAL */
+html {
+  font-size: 14px;
+}
+
+html, body {
+  background-color: hsla(0, 0%, 95%, 1);
+}
+
+/* 1.1. TEXT */
+h1, h2, h3, h4, h5, h6, p, a, button {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: rgb(32, 64, 86);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  color: rgb(74, 74, 74);
+}
+
+/* 2. MOBILE FIRST */
+/* 2.1. INSTRUCTIONS */
+#volume-button {
+  margin: 5px;
+  padding: 1rem;
+  border: thin solid black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#StartGameButton {
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: black;
+  color: red;
+  cursor: pointer;
+  transition: text-shadow 400ms ease-in-out;
+  margin-bottom: 1rem;
+}
+
+#StartGameButton:active {
+  text-shadow: 0 0 20px lightblue;
+  border: none;
+}
+
+/* 2.2. GAME */
+#game {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#game .card {
+  display: flex;
+  height: 9rem;
+  background-color: rgb(32, 64, 86);
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #FFF;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#game .card .number {
+  font-weight: 900;
+  font-size: 7rem;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+}
+
+#game .alert-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game .alert-container p {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* 3. Tablet */
+@media (min-width: 480px) {
+  .ad-container {height: 90px;}
+
+  /* 3.1. Game */
+  #game .card {height: 12.5rem;}
+
+  #game .alert-container {height: auto;}
+
+  #game .alert-container p {font-size: 2.5rem;}
+}
