@@ -3,7 +3,7 @@ Personal project part of the [Codecademy](https://codecademy.com) course: _Build
 
 This repository is only expository, as part of my portfolio.
 
-Feel free to [play the game online here](https://rodolfo.pro/projects/match-game-project).
+Feel free to [play the game online here](https://rarm.github.io/match-game-project/src/).
 
 #### Check The Code
 Check the code in the [`src`](https://github.com/RARM/match-game-project/tree/master/src) folder; it is pure `HTML`, `CSS`, and `Javascript`. It was also built using Bootstrap.
